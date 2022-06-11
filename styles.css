@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+
+  gap: 5px;
+}
+
+.container div {
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px 13px;
+}
+
+.box-2 {
+  /* flex: 1; */
+  order: 3;
+}
+
+.box-1 {
+  /* flex: 2; */
+  order: 2;
+}
+
+.box-3 {
+  /* flex: 1; */
+  order: 1;
+}
+
+/* order change  */
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+}
